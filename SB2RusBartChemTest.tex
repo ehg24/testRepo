@@ -1,0 +1,31 @@
+\documentclass{ximera}
+\usepackage{chemfig}
+\usepackage[OT2,T1]{fontenc}
+%\input{cyracc.def}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+
+
+\begin{document}
+
+%% See page 38 of the manual
+%% http://mirrors.rit.edu/CTAN/macros/generic/chemfig/chemfig_doc_en.pdf
+\setcrambond{2pt}{}{} %% Gives cool 3D look
+
+\chemfig{
+  HO-[2,.5,2]?<[7,0.7]
+  (-[2,0.5]OHa)-[,,,,line width=2pt]
+  (-[6,0.5]OHb)>[1,0.7]
+  (-[6,0.5]OHc)-[3,0.7]
+  Od-[4]?(-[2,0.3]-[3,0.5]OHe)}
+Text in English
+
+\begin{otherlanguage*}{russian}
+Текст на русском языке
+\end{otherlanguage*}
+
+A word and another \foreignlanguage{russian}{слово}
+
+
+\end{document}
