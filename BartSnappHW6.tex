@@ -1,0 +1,68 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage,multicol}
+%\usepackage[OT2,T1]{fontenc}
+
+%\usepackage[russian,english]{babel}
+\usepackage[OT2,T1]{fontenc}
+\input{cyracc.def}
+\newcommand\textcyr[1]{{\fontencoding{OT2}\fontfamily{wncyr}\selectfont #1}}
+
+
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+
+
+\begin{document}
+
+\section*{BCS 101: Homework 6} 
+\noindent\textsc{Bart Snapp} \\                                                 
+
+\noindent
+Aspiring sociologist that you are, you decide to take a short survey
+of how the class is doing today.  Ask five or six people how they are,
+asking their names if you need, and be prepared to say how you think
+the class is doing. Feel free to make up answers. Use names from the
+back of the book. The first chart is for Latin and the second for
+Cyrillic.
+
+\vspace{1cm}
+\noindent
+Moja pitanja:
+\begin{enumerate}
+\item Dobar dan! Kako se zovete?
+\item Kako ste vi? Kako je \textit{Srpsko-Hrvatski 101}?
+\end{enumerate}
+{
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|l|l|}\hline
+Ime: & Kako je on ili ona: \\ \hline\hline
+Elvis & Dobro hvala! \v Skola je dobro. \\ \hline
+Tijana & Dobro a vi? Ja sam umoran. \v Skola nije laka. \\ \hline
+Darko & Ja sam odli\v cno. Srpsko-hrvatski je te\v zak.\\ \hline
+Hana & Ja sam dobro. Ja volim srpsko-hrvatski. \\ \hline
+Ivan & Ja sam ok. Moj ud\v zbenik je lo\v s.\\ \hline
+Marija & Ja sam super. Dobro, moj ud\v zbenik je lo\v s ali ja sam pametna! \\ \hline
+\end{tabular}
+}
+
+\vspace{1cm}
+
+
+%\foreignlanguage{russian}{
+\textcyr{\cyracc
+{
+\renewcommand{\arraystretch}{1.5}
+\noindent
+\begin{tabular}{|l|l|}\hline
+Ime: & Kako je on ili ona: \\ \hline\hline
+Elvis & Dobro hvala! Shkola je dobro. \\ \hline
+Tijana & Dobro a vi? Ja sam umoran. Shkola nije laka. \\ \hline
+Darko & Ja sam odlichno. Srpsko-hrva{t}{s}ki je tezhak.\\ \hline
+Hana & Ja sam dobro. Ja volim srpsko-hrva{t}{s}ki. \\ \hline
+Ivan & Ja sam ok. Moj u\dzh benik je losh.\\ \hline
+Marija & Ja sam super. Dobro, moj u\dzh benik je losh ali ja sam pametna! \\ \hline
+\end{tabular}
+}
+}
+
+\end{document}
