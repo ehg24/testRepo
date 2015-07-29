@@ -23,13 +23,13 @@ Given a right triangle:
 \coordinate (B) at (0,5);
 \coordinate (C) at (6.5,2);
 \tkzMarkRightAngle(C,A,B)
-\tkzDefMidPoint(A,B) \tkzGetPoint{aa}
+\tkzDefMidPoint(A,B) \tkzGetPoint{a}
 \tkzDefMidPoint(A,C) \tkzGetPoint{b}
 \tkzDefMidPoint(B,C) \tkzGetPoint{c}
 \draw (A)--(B)--(C)--cycle;
 \tkzLabelPoints[above](c)
 \tkzLabelPoints[below](b)
-\tkzLabelPoints[left](a)
+\tkzLabelPoints[left](aa)
 \end{tikzpicture}
 \end{image}
 We have that:
